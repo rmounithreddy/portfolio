@@ -1,6 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounith's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- INTRO -->
+    <h1>RAJANNAGARI MOUNITH REDDY</h1>
+    <p class="intro">Hey 👋 I'm a curious coder who loves turning ideas into full-stack apps with React.js, FastAPI, and Python. Big fan of AI and building smart stuff that solves problems.</p>
+
+    <!-- CLICKABLE TERMINAL -->
+    <div class="terminal" onclick="revealMessage()">
+      <span class="prompt">$</span> click_me <span class="cursor">█</span>
+      <p id="hiddenMessage" style="display:none;">😎 Universe has Directed you here! Let's work together.</p>
+    </div>
+
+    <!-- PROJECTS -->
+<!-- PROJECTS -->
+<div class="projects">
+  <p><span class="prompt">$</span> ls projects/</p>
+  <ul>
+    <li>🧠 <a href="https://github.com/rmounithreddy/AI-workflow" target="_blank">AI Workflow Builder</a> – visually create and run intelligent workflows</li>
+    <li>🛒 <a href="https://github.com/rmounithreddy/e-commers" target="_blank">E-Commerce Site</a> – dynamic product listing and cart features</li>
+    <li>🌤️ <a href="https://github.com/rmounithreddy/weather-dashboard" target="_blank">Weather Dashboard</a> – real-time weather data visualization</li>
+  </ul>
+</div>
+
+
+    <!-- CONTACT BUTTON -->
+    <button class="contact-btn" onclick="toggleContact()">📩 Contact Me</button>
+
+    <!-- CONTACT MODAL -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleContact()">&times;</span>
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/xyzdqbop" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="_replyto" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Rajannagari Mounith Reddy 💻 | 
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> • 
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
